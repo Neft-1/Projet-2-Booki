@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    padding-top: 79px;
 }
 
 header {
@@ -23,6 +24,11 @@ header {
     justify-content: space-between;
     height: 79px;
     gap: 62.5%;
+    position: fixed;
+    top: 0;
+    width: 55%;
+    z-index: 1;
+    background-color: white;
 }
 
 footer {
@@ -48,9 +54,9 @@ footer {
 nav {
     display: flex;
     flex-direction: row;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     gap: 68px;
-    margin-top: 7px;
+    margin-top: 14px;
 }
 
 .main-links {
@@ -362,6 +368,11 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    header {
+        width: 90%;
+        gap: 20%;
+    }
+
     .filters {
         flex-direction: column;
         align-items: flex-start;
