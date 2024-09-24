@@ -652,7 +652,8 @@ a {
     }
 
     .footer-column {
-        height: auto;
+        height: 120px;
         line-height: 30px;
         margin-top: 15px;
     }
+}
