@@ -442,6 +442,14 @@ a {
 
     .main-container {
         padding: 0%;
+        max-width: 768px;
+    }
+
+    main {
+        margin-top: 45px;
+        padding: 0 20px 0 20px;
+        width: 335px;
+        justify-content: center;
     }
 
     header {
@@ -449,31 +457,57 @@ a {
         height: 115px;
         justify-content: center;
         align-items: center;
-        width: auto;
+        gap: 0;
+        width: 375px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: white;
     }
 
     nav {
-        width: auto;
-        height: 30%;
-        padding: 0px 0px 10px 0px;
+        width: 375px;
+        height: 36px;
+        margin-top: 0;
+        padding: 0;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .main-links {
-        display: flex;
-        justify-content: space-around;
-        border-bottom: underline solid 2px;
-        border-color: #F2F2F2;
-    }
-    
-    .main-links:hover {
-        color: #0065FC;
-        text-decoration-color: #0065FC;
-        border-color: #0065FC;
+        position: relative;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        padding-bottom: 15px;
+        width: 50%;
     }
 
-    .main-links::before {
+    .main-links:hover::before {
         visibility: hidden;
-        height: 0;
+    }
+
+    .main-links::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: var(--main-bg-color);
+        transform: scaleX(1);
+    }
+
+    .main-links.active::after,
+    .main-links:hover::after {
+        background-color: blue;
+    }
+
+    .main-links.active,
+    .main-links:hover {
+        color: blue;
     }
 
     .logo {
@@ -487,4 +521,9 @@ a {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    #intro-text {
+        margin-bottom: 2px;
+    }
+    
 }
