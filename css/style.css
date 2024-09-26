@@ -23,10 +23,9 @@ header {
     display: flex;
     justify-content: space-between;
     height: 79px;
-    gap: 62.5%;
     position: fixed;
     top: 0;
-    width: 55%;
+    width: 100%;
     z-index: 1;
     background-color: white;
 }
@@ -446,7 +445,7 @@ a {
 
     .main-container {
         padding: 0%;
-        max-width: 768px;
+        width: 100%;
     }
 
     main {
@@ -466,7 +465,7 @@ a {
         justify-content: center;
         align-items: center;
         gap: 0;
-        width: 375px;
+        width: 100%;
         position: fixed;
         top: 0;
         left: 0;
@@ -475,7 +474,8 @@ a {
     }
 
     nav {
-        width: 375px;
+        width: 100%;
+        min-width: 320px;
         height: 36px;
         margin-top: 0;
         padding: 0;
@@ -505,7 +505,6 @@ a {
         right: 0;
         height: 2px;
         background-color: var(--main-bg-color);
-        transform: scaleX(1);
     }
 
     .main-links.active::after,
