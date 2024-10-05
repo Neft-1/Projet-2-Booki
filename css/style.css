@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -38,11 +40,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 80px;
+    padding: 10px 0 10px 0;
 }
 
 .footer-column {
     width: 33%;
     padding-left: 20px;
+    line-height: 30px;
 }
 
 .logo {
@@ -78,7 +82,7 @@ nav {
 .main-links:hover {
     color: var(--main-color);
 }
-.main-links:hover::before {
+.main-links:hover::before{
     visibility: visible;
 }
 
@@ -94,10 +98,14 @@ a {
     text-decoration: none;
 }
 
+#intro-text {
+    margin-bottom: 5px;
+}
+
 .form {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .fa-location-dot {
@@ -149,7 +157,7 @@ a {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .button-filters {
@@ -193,7 +201,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px 0px 20px 0px ;
+    margin: 25px 0px 25px 0px ;
 }
 
 .section-title {
@@ -233,7 +241,7 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px 30px 15px 30px;
+    padding: 30px 30px 30px 30px;
     box-sizing: border-box;
 }
 
@@ -528,12 +536,10 @@ a {
         background-color: var(--main-bg-color);
     }
 
-    .main-links.active::after,
     .main-links:hover::after {
         background-color: var(--main-color);
     }
 
-    .main-links.active,
     .main-links:hover {
         color: var(--main-color);
     }
